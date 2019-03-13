@@ -9,8 +9,8 @@
                 "type": "value",
                 "value": "{{ getenv "WEBHOOK_SECRET" | js }}",
                 "parameter": {
-                    "source": "payload",
-                    "name": "secret"
+                    "source": "header",
+                    "name": "X-Secret"
                 }
             }
         }
